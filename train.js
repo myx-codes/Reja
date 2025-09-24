@@ -1,15 +1,40 @@
-function countLetter(letter, word) {
-  let count = 0;
-  for (let char of word) {
-    if (char === letter) {
-      count++;
-    }
+
+//  ⭐️ Synchronous function vs Asynchronous function
+// Asynchronous: CALLBACK
+
+// DEFINE
+function qoldiqliBolish(a, b, callback) {
+  if (b === 0) {
+    callback("Mahraj nolga teng bolmaydi", null);
+  } else {
+    const c = a % b;
+    callback(null, c, true);
   }
-  return count;
 }
-console.log(countLetter("i", "Alii")); // 2
-console.log(countLetter("r", "Jasurrrr")); // 4
-console.log(countLetter("T", "MIT")); // 1
+
+// CALL
+qoldiqliBolish(7, 4, (err, data) => {
+  if (err) console.log("ERROR:", err);
+  else {
+    console.log("data:", data);
+    console.log("MATIQLAR ...");
+  }
+});
+
+
+
+// function countLetter(letter, word) {
+//   let count = 0;
+//   for (let char of word) {
+//     if (char === letter) {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countLetter("i", "Alii")); // 2
+// console.log(countLetter("r", "Jasurrrr")); // 4
+// console.log(countLetter("T", "MIT")); // 1
 
 
 

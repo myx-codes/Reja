@@ -1,5 +1,7 @@
 // Kutubxonalarni chaqirish
+console.log("WEb server boshlandi");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -29,8 +31,6 @@ app.get("/", function (req, res) {
 });
 
 app.post("/create-item", (req, res) => {
-    console.log(req.body);
-    res.json({ test: "success" });
 });
 
 app.get('/author', (req, res) => {

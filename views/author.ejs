@@ -1,21 +1,148 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"href="/main.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
-    <div class="frame">
-        <div class="main_frame"></div>
-        <div class="left_frame"></div>
-        <div class="midd_frame"></div>
-        <div class="right_frame"></div>
-    </div>
-</body>
+  <div class="container">
 
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="/author/images/me.jpg" alt="My Profile" />
+        <h2>Steven</h2>
+        <p>Contacs</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="info">
+        <p><span class="label">Age:</span> 30</p>
+        <p><span class="label">Residence:</span> UZ</p>
+        <p><span class="label">Freelance:</span> <span class="available">Available</span></p>
+        <p><span class="label">Address:</span> Namangan, Uzbekistan</p>
+      </div>
+
+      <div class="languages">
+        <h3>Languages</h3>
+        <p>Uzbek <span>100%</span></p>
+        <div class="bar"><div class="fill" style="width:100%"></div></div>
+        <p>Korean <span>80%</span></p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <p>English <span>80%</span></p>
+        <div class="bar"><div class="fill" style="width:60%"></div></div>
+      </div>
+
+      <div class="skills">
+        <h3>Skills</h3>
+        <p>HTML <span>90%</span></p>
+        <div class="bar"><div class="fill" style="width:90%"></div></div>
+        <p>CSS <span>85%</span></p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+        <p>JS <span>80%</span></p>
+        <div class="bar"><div class="fill" style="width:80%"></div></div>
+        <p>Python <span>80%</span></p>
+        <div class="bar"><div class="fill" style="width:75%"></div></div>
+        <p>DeepLearning <span>85%</span></p>
+        <div class="bar"><div class="fill" style="width:85%"></div></div>
+      </div>
+
+      <div class="extra-skills">
+        <h3>Extra Skills</h3>
+        <ul>
+            <li>Node.js, Express.js, Django</li>
+            <li>SQL, MongoDB, Firebase</li>
+            <li>Git/GitHub</li>
+            <li>AI & Computer Vision</li>
+        </ul>
+        </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="content">
+      <!-- Me section -->
+      <section class="me" id="home">
+        <div class="me-text">
+          <h1>AI & Full-Stack Developer in Medical Imaging</h1>
+          <p>Specialized in Deep Learning, Medical Imaging, and Full-Stack Web Development. 
+     I am a student at Dongguk University. I research about medical image and make apps for Medical Analytics</p>
+          <button class="btn">Hire Me →</button>
+        </div>
+        <div class="me-img">
+          <img src="/author/images/me2.jpg"  alt="Full-Stack and AI Engineer" />
+        </div>
+      </section>
+
+      <!-- Services section -->
+<section class="services" id="services">
+  <h2>What I can DO</h2>
+  <p>Professional solutions in AI, Medical Imaging, and Full-Stack Development.</p>
+  <div class="service-grid">
+    
+    <div class="service-card">
+      <i class="fa fa-brain"></i>
+      <h3>AI & Deep Learning</h3>
+      <p>Medical Image Segmentation, Model Training & Deployment</p>
+    </div>
+    
+    <div class="service-card">
+      <i class="fa fa-laptop-code"></i>
+      <h3>Full-Stack Development</h3>
+      <p>React.js, Node.js, RESTful APIs, SaaS Platforms</p>
+    </div>
+    
+    <div class="service-card">
+      <i class="fa fa-database"></i>
+      <h3>Data Analytics</h3>
+      <p>Data Cleaning, Visualization, Predictive Modeling</p>
+    </div>
+    
+    <div class="service-card">
+      <i class="fa fa-cloud-upload-alt"></i>
+      <h3>Cloud Deployment</h3>
+      <p>Docker, AWS, GCP, Azure</p>
+    </div>
+    
+    <div class="service-card">
+      <i class="fa fa-vials"></i>
+      <h3>Medical Imaging Tools</h3>
+      <p>CT/MRI Image Processing, DICOM Pipelines</p>
+    </div>
+    
+    <div class="service-card">
+      <i class="fa fa-chalkboard-teacher"></i>
+      <h3>Technical Consulting</h3>
+      <p>Research Support, AI Integration, Training Workshops</p>
+    </div>
+
+  </div>
+</section>
+
+    </main>
+
+    <!-- RIGHT NAVBAR -->
+    <aside class="right-nav">
+      <ul>
+        <li><a href="#home"><i class="fa fa-home"></i></a></li>
+        <li><a href="#services"><i class="fa fa-briefcase"></i></a></li>
+        <li><a href="#portfolio"><i class="fa fa-image"></i></a></li>
+        <li><a href="#resume"><i class="fa fa-file-text"></i></a></li>
+        <li><a href="#contact"><i class="fa fa-envelope"></i></a></li>
+      </ul>
+    </aside>
+
+  </div>
+</body>
 </html>
