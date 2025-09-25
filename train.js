@@ -1,25 +1,39 @@
+// C-TASK
 
-//  ⭐️ Synchronous function vs Asynchronous function
-// Asynchronous: CALLBACK
-
-// DEFINE
-function qoldiqliBolish(a, b, callback) {
-  if (b === 0) {
-    callback("Mahraj nolga teng bolmaydi", null);
-  } else {
-    const c = a % b;
-    callback(null, c, true);
+function checkText(str1, str2) {
+  
+  if (str1.length !== str2.length) {
+    return false;
   }
+  let sorted1 = str1.split("").sort().join("");
+  let sorted2 = str2.split("").sort().join("");
+  return sorted1 === sorted2;
 }
 
-// CALL
-qoldiqliBolish(7, 4, (err, data) => {
-  if (err) console.log("ERROR:", err);
-  else {
-    console.log("data:", data);
-    console.log("MATIQLAR ...");
-  }
-});
+console.log(checkText("mitgroup", "gmtiprou")); 
+console.log(checkText("hello", "olelh"));       
+console.log(checkText("MIT", "mit"));           
+console.log(checkText("test", "ttew"));        
+
+
+
+
+// // B-TASK
+// function countNumbers(str) {
+//   let count = 0;                
+//   for (let i = 0; i < str.length; i++) {   
+//     let check = str[i];            
+//     if (check >= '0' && check <= '9') { 
+//       count++;                  
+//     }
+//   }
+//   return count;                 
+// }
+
+// console.log(countNumbers("ad2a54y79wet0sfgb9")); // 7
+// console.log(countNumbers("hello123world"));      // 3
+// console.log(countNumbers("ab2c"));                // 1
+// console.log(countNumbers("abc"));                // 0
 
 
 
