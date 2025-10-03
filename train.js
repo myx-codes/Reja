@@ -1,59 +1,76 @@
-// TASK-D
+// TASK-E
 
-class Shop {
-  constructor(olma, nok, qovun) {
-    this.olma = olma;
-    this.nok = nok;
-    this.qovun = qovun;
+function getReverse(str) {
+  let reverse = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    reverse += str[i]; 
   }
-
-  // Hozirgi vaqtni olish
-  getTime() {
-    const now = new Date();
-    let hour = String(now.getHours()).padStart(2, "0");
-    let minute = String(now.getMinutes()).padStart(2, "0");
-    return `${hour}:${minute}`;
-  }
-
-  // Qoldiqni ko‘rsatish
-  qoldiq() {
-    console.log(
-      `Hozir ${this.getTime()}da ${this.olma}ta olma, ${this.nok}ta nok va ${this.qovun}ta qovun mavjud!`
-    );
-  }
-
-  // Sotish
-  sotish(product, count) {
-    if (this[product] !== undefined) {
-      this[product] -= count;
-      if (this[product] < 0) this[product] = 0;
-      console.log(
-        `Hozir ${this.getTime()}da ${count}ta ${product} sotildi!`
-      );
-    } else {
-      console.log("Bunday mahsulot mavjud emas!");
-    }
-  }
-
-  // Qabul qilish
-  qabul(product, count) {
-    if (this[product] !== undefined) {
-      this[product] += count;
-      console.log(
-        `Hozir ${this.getTime()}da ${count}ta ${product} qabul qilindi!`
-      );
-    } else {
-      console.log("Bunday mahsulot mavjud emas!");
-    }
-  }
+  return reverse;
 }
 
+console.log(getReverse("MIT31"));   
+console.log(getReverse("steven"));     
+console.log(getReverse("python")); 
 
-const shop = new Shop(10, 7, 3);
-shop.qoldiq();             
-shop.sotish("olma", 4);   
-shop.qabul("qovun", 2);    
-shop.qoldiq();             
+
+
+
+// // TASK-D
+
+// class Shop {
+//   constructor(olma, nok, qovun) {
+//     this.olma = olma;
+//     this.nok = nok;
+//     this.qovun = qovun;
+//   }
+
+//   // Hozirgi vaqtni olish
+//   getTime() {
+//     const now = new Date();
+//     let hour = String(now.getHours()).padStart(2, "0");
+//     let minute = String(now.getMinutes()).padStart(2, "0");
+//     return `${hour}:${minute}`;
+//   }
+
+//   // Qoldiqni ko‘rsatish
+//   qoldiq() {
+//     console.log(
+//       `Hozir ${this.getTime()}da ${this.olma}ta olma, ${this.nok}ta nok va ${this.qovun}ta qovun mavjud!`
+//     );
+//   }
+
+//   // Sotish
+//   sotish(product, count) {
+//     if (this[product] !== undefined) {
+//       this[product] -= count;
+//       if (this[product] < 0) this[product] = 0;
+//       console.log(
+//         `Hozir ${this.getTime()}da ${count}ta ${product} sotildi!`
+//       );
+//     } else {
+//       console.log("Bunday mahsulot mavjud emas!");
+//     }
+//   }
+
+//   // Qabul qilish
+//   qabul(product, count) {
+//     if (this[product] !== undefined) {
+//       this[product] += count;
+//       console.log(
+//         `Hozir ${this.getTime()}da ${count}ta ${product} qabul qilindi!`
+//       );
+//     } else {
+//       console.log("Bunday mahsulot mavjud emas!");
+//     }
+//   }
+// }
+
+
+// const shop = new Shop(10, 7, 3);
+// shop.qoldiq();             
+// shop.sotish("olma", 4);   
+// shop.qabul("qovun", 2);    
+// shop.qoldiq();             
 
 
 
