@@ -9,9 +9,10 @@ const db = require("./server").db();
 const mongodb = require("mongodb");
 
 // 1: Kirish code
-app.use(express.static("public"));
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(express.static("public")); //Middleware design pattern public papkamizni requistlarga ochib quyamiz
+app.use(express.json()); // json farmatdagi datalarni objlarga aylantirib beradi.
+app.use(express.urlencoded({ extended: true })); // html formdan post qilgan narsalarimizni express qabul qiladi.
+
 
 // 2: Session code
 // 3: Views code

@@ -1,17 +1,33 @@
-// TASK-E
-
-function getReverse(str) {
-  let reverse = "";
-  for (let i = str.length - 1; i >= 0; i--) {
-    reverse += str[i]; 
+// TASK-F
+function findDoublers(str) {
+  for (let i = 0; i < str.length; i++) {
+    let ch = str[i]; 
+    if (str.indexOf(ch) !== str.lastIndexOf(ch)) {
+      return true; 
+    }
   }
-  return reverse;
+  return false; 
 }
+console.log("Example 1:",findDoublers("hello"));  
+console.log("Example 2:", findDoublers("world"));  
 
-console.log(getReverse("MIT31"));   
-console.log(getReverse("steven"));     
-console.log(getReverse("python")); 
 
+
+
+
+// // TASK-E
+
+// function getReverse(str) {
+//   let reverse = "";
+//   for (let i = str.length - 1; i >= 0; i--) {
+//     reverse += str[i]; 
+//   }
+//   return reverse;
+// }
+
+// console.log(getReverse("MIT31"));   
+// console.log(getReverse("steven"));     
+// console.log(getReverse("python")); 
 
 
 
